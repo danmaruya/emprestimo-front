@@ -1,0 +1,33 @@
+<h1 class="display-6 mt-3 p-2">Consulta de Clientes</h1>
+<hr>
+<a routerLink="/clientes/cadastrar" class="btn btn-primary">Novo</a>
+
+<table class="table mt-3">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">CPF</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Rua</th>
+      <th scope="col">Numero</th>
+      <th scope="col">CEP</th>
+      <th scope="col">Rendimento mensal</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cliente of cliente">
+      <th scope="row">{{cliente.cpf}}</th>
+      <td>{{cliente.nome}}</td>
+      <td>{{cliente.telefone}}</td>
+      <td>{{cliente.endereco.rua}}</td>
+      <td>{{cliente.endereco.numero}}</td>
+      <td>{{cliente.endereco.cep}}</td>
+      <td>{{cliente.rendimentoMensal | currency: 'BRL'}}</td>
+      <td>
+        <mat-icon routerLink="/clientes/atualizar/{{cliente.cpf}}" style="margin-right: 10px;">edit</mat-icon>
+        <mat-icon (click)="deletar(cliente)">delete</mat-icon>
+      </td>
+    </tr>
+  </tbody>
+</table>

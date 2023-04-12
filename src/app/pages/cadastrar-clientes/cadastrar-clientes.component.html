@@ -1,0 +1,100 @@
+<h1 class="display-6 mt-3 p-2">Cadastrar clientes</h1>
+<hr />
+
+<div class="container-fluid">
+  <form [formGroup]="clienteForm" (ngSubmit)="cadastrar()">
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input
+            id="cpf"
+            type="text"
+            class="form-control"
+            formControlName="cpf"
+            placeholder="Insira seu CPF, sem pontos e hifen"
+          />
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input
+            id="nome"
+            type="text"
+            class="form-control"
+            formControlName="nome"
+            placeholder="Insira seu nome completo"
+          />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input
+            id="telefone"
+            type="text"
+            class="form-control"
+            formControlName="telefone"
+            placeholder="Coloque somente numeros 11999999999"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6" formGroupName="endereco">
+        <div class="mb-3">
+          <label for="rua" class="form-label">Rua</label>
+          <input
+            id="rua"
+            type="text"
+            class="form-control"
+            name="endereco"
+            formControlName="rua"
+            placeholder="Coloque seu endereco completo"
+          />
+        </div>
+      </div>
+      <div class="col-2" formGroupName="endereco">
+        <div class="mb-3">
+          <label for="numero" class="form-label">Numero</label>
+          <input
+            id="numero"
+            type="text"
+            class="form-control"
+            name="endereco"
+            formControlName="numero"
+            placeholder="Coloque somente numeros"
+          />
+        </div>
+      </div>
+      <div class="col-3" formGroupName="endereco">
+        <div class="mb-3">
+          <label for="cep" class="form-label">CEP</label>
+          <input
+            id="cep"
+            type="text"
+            class="form-control"
+            name="endereco"
+            formControlName="cep"
+            placeholder="Coloque somente numeros"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <div class="mb-3">
+          <label for="rendimentoMensal" class="form-label">Rendimento Mensal</label>
+          <input
+            id="rendimentoMensal"
+            type="number"
+            class="form-control"
+            formControlName="rendimentoMensal"
+          />
+        </div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="!clienteForm.valid" class="btn btn-primary">Cadastrar</button>
+  </form>
+</div>

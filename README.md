@@ -1,27 +1,25 @@
 # EmprestimoFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Este projeto faz parte do Programa de Capacitação FullStack administrado pela Minsait.
+
+Em conjunto, há o projeto Back-End desta API, que pode ser acessado <a href="https://github.com/danmaruya/api-emprestimo">clicando aqui</a>.
+
+Foi construído uma aplicação onde é possível consumir os dados de uma API e exibí-los em uma tabela. Permitindo o cadastro, atualização, consulta e exclusão de clientes.
+
+## Status do Projeto
+
+:green_circle: Concluído
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Execute o comando "ng serve" no terminal do seu framework para subir um dev server. E acesse `http://localhost:4200`. 
 
-## Code scaffolding
+## Tecnologias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- TypeScript
+- Bootstrap
+- Angular
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Autor
+[<img src="https://media.licdn.com/dms/image/C4E03AQFdkf8iAY7q9A/profile-displayphoto-shrink_800_800/0/1621365813609?e=1686787200&v=beta&t=_7n7sA_sL6mgavUFZong0tgqTIrbejTVjaMQ0yJpZAc" width=115><br><sub>Daniel Kenji Maruya</sub>](https://www.linkedin.com/in/daniel-kenji-maruya/)
+:---:

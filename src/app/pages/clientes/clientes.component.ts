@@ -44,7 +44,7 @@ export class ClientesComponent {
           Swal.fire({
             title: 'Erro ao excluir',
             text: 'Ocorreu um erro ao excluir o cliente',
-            icon: 'error'
+            icon: error.error.message
           });
         });
         }

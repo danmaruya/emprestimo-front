@@ -85,7 +85,7 @@ export class AtualizarClientesComponent {
               Swal.fire({
                 icon: 'error',
                 title: 'Erro',
-                text: error.error.message,
+                text: error.error.errors[0].defaultMessage,
               });
               break;
             case 404:
